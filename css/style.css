@@ -1,0 +1,480 @@
+/* variable */
+:root {
+    --main-bg-color-white: white;
+    --main-bg-color-black: #000000;
+    --main-bg-color-gray: #dadada;
+    --main-bg-color-gray300: #bcbcbc;
+    --main-bg-color-gray700: #7e7e7e7e;
+}
+
+/* variable */
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--main-bg-color-gray);
+    line-height: 1.6;
+    font-size: small;
+}
+
+.full-container {
+    width: 100%;
+    height: 32px;
+}
+
+.container {
+    width: 92%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--main-bg-color-white);
+}
+
+.title-header {
+    text-align: center;
+    padding-top: 65px;
+    width: 100%;
+    height: 150px;
+}
+
+.title-header h1 {
+    font-size: 50px;
+    font-weight: bold;
+    color: var(--main-bg-color-black);
+}
+
+.title-header p {
+    font-size: 0.9rem;
+}
+
+.image-header {
+    background-image: url('../image/jane.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 62rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding: 25px;
+}
+
+.image-header span:nth-child(1) {
+    font-size: 35px;
+    font-weight: bold;
+    color: var(--main-bg-color-white);
+    margin-bottom: 20px;
+}
+
+.image-header span:nth-child(2) {
+    font-size: 35px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--main-bg-color-white);
+    margin-bottom: 20px;
+}
+
+.btn-subscribe {
+    background-color: var(--main-bg-color-gray);
+    color: var(--main-bg-color-black);
+    padding: 15px;
+    font-size: 15px;
+    width: 10vh;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    /* uppercase:Majuscule lowercase capilizer */
+    /* animation: button_subscribe 2s infinite; */
+    /* pour faire une animation en css avec animation lier au @keyframes */
+}
+
+.btn-subscribe:hover {
+    background-color: var(--main-bg-color-black);
+    color: var(--main-bg-color-white);
+}
+
+/* menu navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* TITLE HEADING */
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin: 0 auto;
+    width: 92%;
+    border-left: 1px solid var(--main-bg-color-gray300);
+    border-right: 1px solid var(--main-bg-color-gray300);
+}
+
+.posts {
+    width: 63%;
+    margin: 20px auto;
+}
+
+.post-header {
+    text-align: center;
+    padding: 15px;
+}
+
+.post-image img {
+    width: 100%;
+}
+
+.post-author {
+    padding-top: 20px;
+    text-align: start;
+}
+
+.post-description {
+    text-align: start
+}
+
+h2 {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+h5 {
+    font-weight: bold;
+}
+
+.post {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--main-bg-color-white);
+    gap: 10px; /* Espace entre les deux boutons */    
+    padding: 10px;
+}
+
+/* LIKE & REPLY */
+.like button {
+    padding: 10px;
+    margin-left: 10px;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+}
+
+.like button i {
+    color: #000000;
+    margin-right: 5px;
+}
+
+.reply {
+    padding: 10px;
+}
+
+.reply button {
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    border-radius: 2px;
+}
+
+.reply button span {
+    padding: 4px;
+    background-color: #fff;
+    color: #000000;
+    margin-left: 5px;
+    border-radius: 4px;
+}
+
+/* MY NAME  */
+.sidebar {
+    width: 30%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.name {
+    margin-top: 0 !important;
+}
+
+.side img {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.descri {
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+h3 {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* POPULAR POST */
+.popular {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.pop {
+    background-color: #000000;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    color: white;
+}
+
+.petit {
+    width: 50px;
+    height: 50px;
+    padding: 20px;
+    margin: 0 50;
+    margin-bottom: 10px;
+
+}
+
+.little {
+    display: flex;
+    background-color: var(--main-bg-color-white);
+}
+
+.denim {
+    padding-top: 20px;
+}
+
+hr {
+    margin: 0;
+}
+
+.big {
+    display: flex;
+    background-color: var(--main-bg-color-white);
+    margin-bottom: 20px;
+}
+
+.big span {
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.big img {
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    margin: 0 50;
+    margin-bottom: 10px;
+}
+
+/* ADVERTISE */
+.exterieur {
+    background-color: var(--main-bg-color-white);
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.interieur {
+    background-color: var(--main-bg-color-gray);
+    padding: 80px;
+}
+
+.para {
+    text-align: center;
+}
+
+/* TAGS */
+.btn button {
+    margin: 2px;
+    background-color: var(--main-bg-color-gray300);
+    border-radius: 3px;
+
+}
+
+.btn button:hover {
+    background-color: var(--main-bg-color-black);
+    color: var(--main-bg-color-white);
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.btn button ai {
+    margin-bottom: 20px;
+}
+
+/* INSPIRATION */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--main-bg-color-white);
+    gap: 10px; /* Espace entre les images */    
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.miniature {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* FOLLOW ME */
+.follow {
+    background-color: var(--main-bg-color-white);
+    padding: 8px;
+    margin-top: 0;
+}
+
+.follow a {
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+/* SUBSCRIBE */
+input[type="email"] {
+    width: 100%;
+    margin-bottom: 3px;
+}
+
+.sub button {
+    width: 100%;
+    background-color: red;
+    color: white;
+    padding: 3px;
+    margin-top: 3px;
+}
+.dernier {
+    margin-top: 20px;
+}
+
+/* FOOTER */
+.footer {
+    height: 150px;
+}
+
+.foot button {
+    padding: 10px;
+    margin-left: 30px;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.foot button i {
+    color: white;
+    margin-right: 5px;
+}
+.footer p{
+    color: white;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.footer p span {
+    text-decoration: underline;
+}
+
+/*  style icon */
+.icon-bar-network {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    display: inline-block;
+    transition: all 1s;
+}
+
+.icon-bar-network:hover {
+    background-color: var(--main-bg-color-gray300);
+}
+
+.network-social a {
+    text-decoration: none;
+}
+
+.icon-bar-network i {
+    color: var(--main-bg-color-white);
+}
+
+/* bloc color */
+.bg-black {background-color: var(--main-bg-color-black, black);}
+.bg-white {background-color: var(--main-bg-color-white, black);}
+.bg-gray {background-color: var(--main-bg-color-gray, black);}
+.bg-gray700 {background-color: var(--main-bg-color-gray700, black);}
+.text-black {color: var(--main-bg-color-black, black);}
+.text-white {color: var(--main-bg-color-white, black);}
+.text-gray {color: var(--main-bg-color-gray, black);}
+
+/* bloc margin m- padding p- */
+.m-1 {margin: 1rem;}
+.m-2 {margin: 2rem;}
+.m-3 {margin: 3rem;}
+.m-4 {margin: 4rem;}
+.m-5 {margin: 5rem;}
+.mt-1 {margin: 1rem;}
+.mt-2 {margin: 2rem;}
+.mt-3 {margin: 3rem;}
+.mt-4 {margin: 4rem;}
+.mt-5 {margin: 5rem;}
+.mb-1 {margin: 1rem;}
+.mb-2 {margin: 2rem;}
+.mb-3 {margin: 3rem;}
+.mb-4 {margin: 4rem;}
+.mb-5 {margin: 5rem;}
+.p-1 {padding: 0.5rem;}
+.p-2 {padding: 1rem;}
+.p-3 {padding: 2rem;}
+.p-4 {padding: 3rem;}
+.p-5 {padding: 4rem;}
+
+/* animation */
+@keyframes button_subscribe {
+    from {
+        background-color: var(--main-bg-color-gray);
+    }
+
+    to {
+        background-color: var(--main-bg-color-black);
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .title-header h1 {
+        color: red;
+    }
+
+    .image-header {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .content {
+        display: block;
+    }
+
+    .posts {
+        width: 100%;
+        margin: 0;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin: 0;
+    }
+}
